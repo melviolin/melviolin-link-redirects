@@ -2,6 +2,15 @@
 <html>
 <head>
   <title>Redirects</title>
+  <script>
+    function handleRedirects() {
+      const path = window.location.pathname;
+      if (path === '/repertorio') {
+        window.location.replace('https://docs.google.com/document/d/1IZOTggt1iwilEc_R1Jh1f4ZZOtXkzulbT7mKqz7V-P0/edit');
+      }
+    }
+    window.onload = handleRedirects;
+  </script>
 </head>
 <body>
 </body>
